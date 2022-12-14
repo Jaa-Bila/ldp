@@ -58,7 +58,9 @@ module.exports = {
         },
     },
     plugins: [
-        require('@tailwindcss/forms'),
+        require('@tailwindcss/forms')({
+            strategy: 'class',
+          }),
         require('@tailwindcss/typography'),
         // add custom variant for expanding sidebar
         plugin(({ addVariant, e }) => {

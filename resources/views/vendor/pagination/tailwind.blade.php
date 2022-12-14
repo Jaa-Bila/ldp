@@ -11,12 +11,12 @@
                         </svg>
                     </span>
                 @else
-                    <a href="{{ $paginator->previousPageUrl() }}" class="inline-flex items-center justify-center rounded leading-5 px-2.5 py-2 bg-white hover:bg-indigo-500 border border-slate-200 text-slate-600 hover:text-white shadow-sm">
+                    <a href="{{ $paginator->previousPageUrl() }}" class="inline-flex items-center justify-center rounded leading-5 px-2.5 py-2 bg-white hover:bg-blue-500 border border-slate-200 text-slate-600 hover:text-white shadow-sm">
                         <span class="sr-only">{!! __('pagination.previous') !!}</span><wbr />
                         <svg class="h-4 w-4 fill-current" viewBox="0 0 16 16">
                             <path d="M9.4 13.4l1.4-1.4-4-4 4-4-1.4-1.4L4 8z" />
                         </svg>
-                    </a>                
+                    </a>
                 @endif
             </div>
 
@@ -35,11 +35,11 @@
                     @foreach ($element as $page => $url)
                             @if ($page == $paginator->currentPage())
                                 <li aria-current="page">
-                                    <span class="inline-flex items-center justify-center leading-5 px-3.5 py-2 bg-white border border-slate-200 text-indigo-500 @if($page === 1){{ 'rounded-l' }}@elseif($page === $paginator->lastPage()){{ 'rounded-r' }}@endif">{{ $page }}</span>
+                                    <span class="inline-flex items-center justify-center leading-5 px-3.5 py-2 bg-white border border-slate-200 text-blue-500 @if($page === 1){{ 'rounded-l' }}@elseif($page === $paginator->lastPage()){{ 'rounded-r' }}@endif">{{ $page }}</span>
                                 </li>
                             @else
                                 <li>
-                                    <a href="{{ $url }}" class="inline-flex items-center justify-center leading-5 px-3.5 py-2 bg-white hover:bg-indigo-500 border border-slate-200 text-slate-600 hover:text-white @if($page === 1){{ 'rounded-l' }}@elseif($page === $paginator->lastPage()){{ 'rounded-r' }}@endif">{{ $page }}</a>
+                                    <a href="{{ $url }}" class="inline-flex items-center justify-center leading-5 px-3.5 py-2 bg-white hover:bg-blue-500 border border-slate-200 text-slate-600 hover:text-white @if($page === 1){{ 'rounded-l' }}@elseif($page === $paginator->lastPage()){{ 'rounded-r' }}@endif">{{ $page }}</a>
                                 </li>
                             @endif
                         @endforeach
@@ -50,23 +50,23 @@
             {{-- Next Page Link --}}
             <div class="ml-2">
                 @if ($paginator->hasMorePages())
-                    <a href="{{ $paginator->nextPageUrl() }}" class="inline-flex items-center justify-center rounded leading-5 px-2.5 py-2 bg-white hover:bg-indigo-500 border border-slate-200 text-slate-600 hover:text-white shadow-sm">
+                    <a href="{{ $paginator->nextPageUrl() }}" class="inline-flex items-center justify-center rounded leading-5 px-2.5 py-2 bg-white hover:bg-blue-500 border border-slate-200 text-slate-600 hover:text-white shadow-sm">
                         <span class="sr-only">{!! __('pagination.next') !!}</span><wbr />
                         <svg class="h-4 w-4 fill-current" viewBox="0 0 16 16">
                             <path d="M6.6 13.4L5.2 12l4-4-4-4 1.4-1.4L12 8z" />
                         </svg>
-                    </a>                
+                    </a>
                 @else
                     <span class="inline-flex items-center justify-center rounded leading-5 px-2.5 py-2 bg-white border border-slate-200 text-slate-300">
                         <span class="sr-only">{!! __('pagination.next') !!}</span><wbr />
                         <svg class="h-4 w-4 fill-current" viewBox="0 0 16 16">
                             <path d="M6.6 13.4L5.2 12l4-4-4-4 1.4-1.4L12 8z" />
                         </svg>
-                    </span>                
+                    </span>
                 @endif
-            </div>        
+            </div>
         </nav>
-        
+
         <div class="text-sm text-slate-500 text-center sm:text-left">
             {!! __('Showing') !!}
             @if ($paginator->firstItem())
@@ -78,7 +78,7 @@
             @endif
             {!! __('of') !!}
             <span class="font-medium text-slate-600">{{ $paginator->total() }}</span>
-            {!! __('results') !!}            
-        </div>    
+            {!! __('results') !!}
+        </div>
     </div>
 @endif

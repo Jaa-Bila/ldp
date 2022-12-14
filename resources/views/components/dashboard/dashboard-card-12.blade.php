@@ -1,102 +1,148 @@
-<div class="col-span-full xl:col-span-6 bg-white shadow-lg rounded-sm border border-slate-200">
-    <header class="px-5 py-4 border-b border-slate-100">
-        <h2 class="font-semibold text-slate-800">Recent Activity</h2>
-    </header>
-    <div class="p-3">
+<div>
 
-        <!-- Card content -->
-        <!-- "Today" group -->
-        <div>
-            <header class="text-xs uppercase text-slate-400 bg-slate-50 rounded-sm font-semibold p-2">Today</header>
-            <ul class="my-1">
-                <!-- Item -->
-                <li class="flex px-2">
-                    <div class="w-9 h-9 rounded-full shrink-0 bg-indigo-500 my-2 mr-3">
-                        <svg class="w-9 h-9 fill-current text-indigo-50" viewBox="0 0 36 36">
-                            <path d="M18 10c-4.4 0-8 3.1-8 7s3.6 7 8 7h.6l5.4 2v-4.4c1.2-1.2 2-2.8 2-4.6 0-3.9-3.6-7-8-7zm4 10.8v2.3L18.9 22H18c-3.3 0-6-2.2-6-5s2.7-5 6-5 6 2.2 6 5c0 2.2-2 3.8-2 3.8z" />
-                        </svg>
+    <div class="mt-10 sm:mt-0">
+        <div class="md:grid md:grid-cols-3 md:gap-6">
+          <div class="md:col-span-1">
+            <div class="px-4 sm:px-0">
+              <h3 class="text-lg font-medium leading-6 text-gray-900">Personal Information</h3>
+              <p class="mt-1 text-sm text-gray-600">Data diri peserta pelatihan Operator PAA</p>
+            </div>
+          </div>
+          <div class="mt-5 md:col-span-2 md:mt-0">
+            <form action="#" method="POST">
+              <div class="overflow-hidden shadow sm:rounded-md">
+                <div class="bg-white px-4 py-5 sm:p-6">
+                  <div class="grid grid-cols-6 gap-6">
+
+                    <div class="col-span-6 sm:col-span-3">
+                      <label for="first-name" class="block text-sm font-medium text-gray-700">Nama</label>
+                      <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
                     </div>
-                    <div class="grow flex items-center border-b border-slate-100 text-sm py-2">
-                        <div class="grow flex justify-between">
-                            <div class="self-center"><a class="font-medium text-slate-800 hover:text-slate-900" href="#0">Nick Mark</a> mentioned <a class="font-medium text-slate-800" href="#0">Sara Smith</a> in a new post</div>
-                            <div class="shrink-0 self-end ml-2">
-                                <a class="font-medium text-indigo-500 hover:text-indigo-600" href="#0">View<span class="hidden sm:inline"> -&gt;</span></a>
-                            </div>
-                        </div>
+
+                    <div class="col-span-6 sm:col-span-3">
+                      <label for="last-name" class="block text-sm font-medium text-gray-700">Tempat Tangal Lahir</label>
+                      <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
                     </div>
-                </li>
-                <!-- Item -->
-                <li class="flex px-2">
-                    <div class="w-9 h-9 rounded-full shrink-0 bg-rose-500 my-2 mr-3">
-                        <svg class="w-9 h-9 fill-current text-rose-50" viewBox="0 0 36 36">
-                            <path d="M25 24H11a1 1 0 01-1-1v-5h2v4h12v-4h2v5a1 1 0 01-1 1zM14 13h8v2h-8z" />
-                        </svg>
+
+                    <div class="col-span-6 sm:col-span-3">
+                        <label for="first-name" class="block text-sm font-medium text-gray-700">Nomor Induk Kependudukan / KTP</label>
+                        <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
                     </div>
-                    <div class="grow flex items-center border-b border-slate-100 text-sm py-2">
-                        <div class="grow flex justify-between">
-                            <div class="self-center">The post <a class="font-medium text-slate-800" href="#0">Post Name</a> was removed by <a class="font-medium text-slate-800 hover:text-slate-900" href="#0">Nick Mark</a></div>
-                            <div class="shrink-0 self-end ml-2">
-                                <a class="font-medium text-indigo-500 hover:text-indigo-600" href="#0">View<span class="hidden sm:inline"> -&gt;</span></a>
-                            </div>
-                        </div>
+
+                    <div class="col-span-6 sm:col-span-3">
+                        <label for="country" class="block text-sm font-medium text-gray-700">Pendidikan Terakhir</label>
+                        <select id="country" name="country" autocomplete="country-name" class="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+                            <option>D3</option>
+                            <option>D4</option>
+                            <option>S1</option>
+                            <option>S2</option>
+                        </select>
                     </div>
-                </li>
-                <!-- Item -->
-                <li class="flex px-2">
-                    <div class="w-9 h-9 rounded-full shrink-0 bg-emerald-500 my-2 mr-3">
-                        <svg class="w-9 h-9 fill-current text-emerald-50" viewBox="0 0 36 36">
-                            <path d="M15 13v-3l-5 4 5 4v-3h8a1 1 0 000-2h-8zM21 21h-8a1 1 0 000 2h8v3l5-4-5-4v3z" />
-                        </svg>
+
+                    <div class="col-span-6 sm:col-span-3">
+                        <label for="country" class="block text-sm font-medium text-gray-700">Instansi / Perusahaan</label>
+                        <select id="country" name="country" autocomplete="country-name" class="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+                            <option>PT. Kartika Jaya</option>
+                            <option>PT. Jaya Abadi</option>
+                            <option>PT. Samkuli</option>
+                            <option>Pt. Bima Jaya</option>
+                        </select>
                     </div>
-                    <div class="grow flex items-center text-sm py-2">
-                        <div class="grow flex justify-between">
-                            <div class="self-center"><a class="font-medium text-slate-800 hover:text-slate-900" href="#0">Patrick Sullivan</a> published a new <a class="font-medium text-slate-800" href="#0">post</a></div>
-                            <div class="shrink-0 self-end ml-2">
-                                <a class="font-medium text-indigo-500 hover:text-indigo-600" href="#0">View<span class="hidden sm:inline"> -&gt;</span></a>
-                            </div>
-                        </div>
+
+                    <div class="col-span-6 sm:col-span-3">
+                        <label for="first-name" class="block text-sm font-medium text-gray-700">Alamat Perusahaan</label>
+                        <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
                     </div>
-                </li>
-            </ul>
+
+                    <div class="col-span-6 sm:col-span-3">
+                        <label for="first-name" class="block text-sm font-medium text-gray-700">No. Telp / WA</label>
+                        <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                    </div>
+
+                  </div>
+                {{-- </div>
+                <div class="bg-gray-50 px-4 py-3 text-right sm:px-6">
+                  <button type="submit" class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Save</button>
+                </div> --}}
+              </div>
+            </form>
+          </div>
         </div>
-        <!-- "Yesterday" group -->
-        <div>
-            <header class="text-xs uppercase text-slate-400 bg-slate-50 rounded-sm font-semibold p-2">Yesterday</header>
-            <ul class="my-1">
-                <!-- Item -->
-                <li class="flex px-2">
-                    <div class="w-9 h-9 rounded-full shrink-0 bg-sky-500 my-2 mr-3">
-                        <svg class="w-9 h-9 fill-current text-sky-50" viewBox="0 0 36 36">
-                            <path d="M23 11v2.085c-2.841.401-4.41 2.462-5.8 4.315-1.449 1.932-2.7 3.6-5.2 3.6h-1v2h1c3.5 0 5.253-2.338 6.8-4.4 1.449-1.932 2.7-3.6 5.2-3.6h3l-4-4zM15.406 16.455c.066-.087.125-.162.194-.254.314-.419.656-.872 1.033-1.33C15.475 13.802 14.038 13 12 13h-1v2h1c1.471 0 2.505.586 3.406 1.455zM24 21c-1.471 0-2.505-.586-3.406-1.455-.066.087-.125.162-.194.254-.316.422-.656.873-1.028 1.328.959.878 2.108 1.573 3.628 1.788V25l4-4h-3z" />
-                        </svg>
-                    </div>
-                    <div class="grow flex items-center border-b border-slate-100 text-sm py-2">
-                        <div class="grow flex justify-between">
-                            <div class="self-center"><a class="font-medium text-slate-800 hover:text-slate-900" href="#0">240+</a> users have subscribed to <a class="font-medium text-slate-800" href="#0">Newsletter #1</a></div>
-                            <div class="shrink-0 self-end ml-2">
-                                <a class="font-medium text-indigo-500 hover:text-indigo-600" href="#0">View<span class="hidden sm:inline"> -&gt;</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <!-- Item -->
-                <li class="flex px-2">
-                    <div class="w-9 h-9 rounded-full shrink-0 bg-indigo-500 my-2 mr-3">
-                        <svg class="w-9 h-9 fill-current text-indigo-50" viewBox="0 0 36 36">
-                            <path d="M18 10c-4.4 0-8 3.1-8 7s3.6 7 8 7h.6l5.4 2v-4.4c1.2-1.2 2-2.8 2-4.6 0-3.9-3.6-7-8-7zm4 10.8v2.3L18.9 22H18c-3.3 0-6-2.2-6-5s2.7-5 6-5 6 2.2 6 5c0 2.2-2 3.8-2 3.8z" />
-                        </svg>
-                    </div>
-                    <div class="grow flex items-center text-sm py-2">
-                        <div class="grow flex justify-between">
-                            <div class="self-center">The post <a class="font-medium text-slate-800" href="#0">Post Name</a> was suspended by <a class="font-medium text-slate-800 hover:text-slate-900" href="#0">Nick Mark</a></div>
-                            <div class="shrink-0 self-end ml-2">
-                                <a class="font-medium text-indigo-500 hover:text-indigo-600" href="#0">View<span class="hidden sm:inline"> -&gt;</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+      </div>
+    </div>
+
+    <div class="hidden sm:block" aria-hidden="true">
+        <div class="py-5">
+        <div class="border-t border-gray-200"></div>
+        </div>
+    </div>
+
+    <div class="md:grid md:grid-cols-3 md:gap-6">
+        <div class="md:col-span-1">
+            <div class="px-4 sm:px-0">
+                <h3 class="text-lg font-medium leading-6 text-gray-900">File</h3>
+                <p class="mt-1 text-sm text-gray-600">Data Kelengkapan Berkas</p>
+            </div>
         </div>
 
+        <div class="mt-5 md:col-span-2 md:mt-0">
+            <form action="#" method="POST">
+                <div class="shadow sm:overflow-hidden sm:rounded-md">
+                    <div class="space-y-6 bg-white px-4 py-5 sm:p-6">
+
+                        <div class="grid grid-cols-3 gap-6">
+                            <div class="col-span-3 sm:col-span-2">
+                                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="small_size">KTP</label>
+                                <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" id="file_input" type="file">
+                                <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">SVG, PNG, JPG (MAX. 800x400px).</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-6">
+                            <div class="col-span-3 sm:col-span-2">
+                                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="small_size">Ijazah</label>
+                                <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" id="file_input" type="file">
+                                <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">PDF (MAX. 10MB).</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-6">
+                            <div class="col-span-3 sm:col-span-2">
+                                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="small_size">Surat Keterangan Bekerja</label>
+                                <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" id="file_input" type="file">
+                                <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">PDF (MAX. 10MB).</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-6">
+                            <div class="col-span-3 sm:col-span-2">
+                                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="small_size">Foto 4x6</label>
+                                <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" id="file_input" type="file">
+                                <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">SVG, PNG, JPG (MAX. 10MB).</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-6">
+                            <div class="col-span-3 sm:col-span-2">
+                                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="small_size">Foto 2x3</label>
+                                <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" id="file_input" type="file">
+                                <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">SVG, PNG, JPG (MAX. 10MB).</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="bg-gray-50 px-4 py-3 text-right sm:px-6">
+                        <button type="submit" class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="hidden sm:block" aria-hidden="true">
+        <div class="py-5">
+          <div class="border-t border-gray-200"></div>
+        </div>
     </div>
 </div>

@@ -1,9 +1,9 @@
   <div class="col-span-full xl:col-span-6 bg-white shadow-lg rounded-sm border border-gray-200">
     <header class="px-5 py-4 border-b border-gray-100">
-        <h2 class="font-semibold text-gray-800">Customers</h2>
+        <h2 class="font-semibold text-gray-800">Latest Participant</h2>
     </header>
     <div class="p-3">
-        
+
         <!-- Table -->
         <div class="overflow-x-auto">
             <table class="table-auto w-full">
@@ -17,10 +17,7 @@
                             <div class="font-semibold text-left">Email</div>
                         </th>
                         <th class="p-2 whitespace-nowrap">
-                            <div class="font-semibold text-left">Spent</div>
-                        </th>
-                        <th class="p-2 whitespace-nowrap">
-                            <div class="font-semibold text-center">Country</div>
+                            <div class="font-semibold text-left">Company</div>
                         </th>
                     </tr>
                 </thead>
@@ -39,10 +36,7 @@
                             <div class="text-left">alexshatov@gmail.com</div>
                         </td>
                         <td class="p-2 whitespace-nowrap">
-                            <div class="text-left font-medium text-green-500">$2,890.66</div>
-                        </td>
-                        <td class="p-2 whitespace-nowrap">
-                            <div class="text-lg text-center">🇺🇸</div>
+                            <div class="text-left font-medium text-green-500">PT. Kartika Jaya</div>
                         </td>
                     </tr>
                     <tr>
@@ -58,10 +52,7 @@
                             <div class="text-left">philip.h@gmail.com</div>
                         </td>
                         <td class="p-2 whitespace-nowrap">
-                            <div class="text-left font-medium text-green-500">$2,767.04</div>
-                        </td>
-                        <td class="p-2 whitespace-nowrap">
-                            <div class="text-lg text-center">🇩🇪</div>
+                            <div class="text-left font-medium text-green-500">PT. Kartika Jaya</div>
                         </td>
                     </tr>
                     <tr>
@@ -77,10 +68,7 @@
                             <div class="text-left">mirkofisuk@gmail.com</div>
                         </td>
                         <td class="p-2 whitespace-nowrap">
-                            <div class="text-left font-medium text-green-500">$1,220.66</div>
-                        </td>
-                        <td class="p-2 whitespace-nowrap">
-                            <div class="text-lg text-center">🇫🇷</div>
+                            <div class="text-left font-medium text-green-500">PT. Kartika Jaya</div>
                         </td>
                     </tr>
                     <tr>
@@ -96,10 +84,7 @@
                             <div class="text-left">longburak@gmail.com</div>
                         </td>
                         <td class="p-2 whitespace-nowrap">
-                            <div class="text-left font-medium text-green-500">$1,890.66</div>
-                        </td>
-                        <td class="p-2 whitespace-nowrap">
-                            <div class="text-lg text-center">🇬🇧</div>
+                            <div class="text-left font-medium text-green-500">PT. Kartika Jaya</div>
                         </td>
                     </tr>
                     <tr>
@@ -115,16 +100,13 @@
                             <div class="text-left">alexshatov@gmail.com</div>
                         </td>
                         <td class="p-2 whitespace-nowrap">
-                            <div class="text-left font-medium text-green-500">$2,890.66</div>
+                            <div class="text-left font-medium text-green-500">PT. Bima Jaya</div>
                         </td>
-                        <td class="p-2 whitespace-nowrap">
-                            <div class="text-lg text-center">🇺🇸</div>
-                        </td>
-                    </tr>                                                                                
+                    </tr>
                 </tbody>
             </table>
-        
+
         </div>
-    
+
     </div>
 </div>
