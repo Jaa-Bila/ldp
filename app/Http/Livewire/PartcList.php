@@ -14,8 +14,9 @@ class PartcList extends Component
     public function render()
     {
         return view('livewire.partc-list', [
-            'partcs' => Partc::where('name', 'like', '%'.$this->search.'%')
-            ->paginate('10')
+            'partcs' => Partc::where('name', 'like', '%' . $this->search . '%')
+                ->orderBy('id', 'desc')
+                ->paginate('10')
         ]);
     }
 }

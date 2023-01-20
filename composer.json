@@ -13,6 +13,7 @@
         "laravel/tinker": "^2.7",
         "laravelcollective/html": "^6.3",
         "livewire/livewire": "^2.10",
+        "novay/laravel-word-template": "^1.1",
         "power-components/livewire-powergrid": "^3.5"
     },
     "require-dev": {

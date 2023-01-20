@@ -12,7 +12,6 @@
 
         <!-- Styles -->
         @livewireStyles
-        @powerGridStyles
         <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
 
         <!-- Scripts -->
@@ -52,6 +51,5 @@
         </div>
 
         @livewireScripts
-        @powerGridScripts
     </body>
 </html>
